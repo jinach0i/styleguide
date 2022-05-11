@@ -111,9 +111,10 @@ section { width:100%; height:100%; position:relative; padding-top:60px; }
 .Cont .table-St .sizes>ul>li:last-child{font-size: 22px;}
 .Cont .table-St .sizes .size-num ul{display: flex; justify-content: space-around;}
 .Cont .table-St .sizes .size-num ul li{color: #28a5f5; font-weight: bold; font-size: 16px}
-.Cont .class .classbox{}
-.Cont .class .classbox>ul{display: flex;}
-
+.Cont .classbox{}
+.Cont .classbox>ul{}
+.Cont .classbox>ul>li{}
+.Cont .classbox>ul>li>ul{display: flex;}
 .Cont .class table{border: none;}
 .Cont .class table th{border: none; background: none;  font-weight: bold; color: lightgrey; text-align: left;}
 .Cont table thead{height: 8vh; line-height: 8vh;}
