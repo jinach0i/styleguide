@@ -83,27 +83,23 @@ $(document).ready(function(){
 
 	<!-- // Cont -->
 	<article class="Cont">
-		<div class="inner">
-			<ul class="tabs">
-				<li><a href="#" class="active"><h2><span>JT저축은행</span>Typography</h2></a></li>
-				<li><a href="#"><h2><span>JT저축은행</span>Color</h2></a></li>
-			</ul>
+			<h2><span>JT저축은행</span>Typography</h2>
 			<div class="table-St">
-				<div class="basic">
-					<div class="name">
-						<span class="title">Font Name</span>
-						<p>NotoSansCJKkr</p>
+					<div class="basic">
+						<div class="name">
+							<span class="title">폰트 이름</span>
+							<p>NotoSansCJKkr</p>
+						</div>
+						<div class="weights">
+							<span class="title">폰트 두께</span>
+							<ul>
+								<li>Normal</li>
+								<li class="bold">Bold</li>
+							</ul>
+						</div>
 					</div>
-					<div class="weights">
-						<span class="title">Font Weights</span>
-						<ul>
-							<li>Normal</li>
-							<li class="bold">Bold</li>
-						</ul>
-					</div>
-				</div>
 				<div class="sizes">
-					<span class="title">Sizes</span>
+					<span class="title">폰트 크기</span>
 					<ul>
 						<li class="size10">
 							<ul>
@@ -146,36 +142,46 @@ $(document).ready(function(){
 						</ul>
 					</div>
 				</div>
-				
-				<hr>
+			
 			</div>
-			<div id="class">
+			<div class="class">
 				<span class="title">Classes</span>
 				<table>
-					<caption></caption>
-					<colgroup></colgroup>
+					<caption>Classes List</caption>
+					<colgroup>
+						<col width="15%">
+						<col width="20%">
+						<col width="55%">
+					</colgroup>
 					<thead>
 						<tr>
 							<th></th>
 							<th>클래스명</th>
-							<th>결 과</th>
+							<th>예시</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<th>Font Color</th>
-							<td></td>
-							<td></td>
+							<th rowspan="3">폰트 색상</th>
+							<td>.bulR</td>
+							<td class="red" rowspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis blanditiis sit ab porro facilis, velit harum, dolorum ipsa explicabo fugiat aspernatur minima tempora iusto ex modi ratione corrupti! Ea, sit!</td>
 						</tr>
 						<tr>
-							<th>Font Size</th>
+							<td>.txtR</td>
+						</tr>
+						<tr>
+							<td>.txtBl</td>
+							<td class="blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae impedit necessitatibus fugiat error temporibus pariatur, est numquam dolores minus fuga nisi illo. Earum ipsum illum voluptatum aut nulla iusto odio.</td>
+							
+						</tr>
+						<tr>
+							<th>여백</th>
 							<td></td>
 							<td></td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
-		</div>
 	</article>
 	<!-- Cont // -->
 

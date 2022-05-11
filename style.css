@@ -58,14 +58,13 @@ header > button:before, header button:after, header button span { background-col
 header > button:before {margin-top:-6px;}
 header > button:after {margin-top:6px;}
 
-span.title{font-size: 18px; font-weight: bold; color: lightskyblue;}
+span.title{font-size: 18px; font-weight: bold; color: lightskyblue; margin-bottom: 4%; display: block;}
 li.bold{font-weight: bold;}
-
 
 /* menu action */
 section { width:100%; height:100%; position:relative; padding-top:60px; }
 .Aside { width:250px; height:100%; position:fixed; top:60px; left:0; bottom:0; background:#fff; z-index:102; width:250px; overflow:hidden; background:#fff; border-right:1px solid #ddd; transform:translate(0, 0); -webkit-transform:translate(0, 0); -moz-transform:translate(0, 0); -ms-transform:translate(0, 0); -o-transform:translate(0, 0); transition:transform 0.3s ease-out; -webkit-transition:transform 0.3s ease-out; }
-.Cont { min-height: 100vh; padding:2% 5% 5% 330px; transition:all 0.3s; }
+.Cont { min-height: 100vh; padding:4% 5% 5% 330px; transition:all 0.3s; }
 .aside-closed .Aside {transform:translateX(-102%); -webkit-transform:translateX(-102%); -moz-transform:translateX(-102%); -ms-transform:translateX(-102%); -o-transform:translateX(-102%);}
 
 /* Aside */
@@ -84,16 +83,15 @@ section { width:100%; height:100%; position:relative; padding-top:60px; }
 
 
 /* Cont*/
-.Cont{}
-.Cont .inner{border: 50px solid rgba(240, 248, 255, .4); padding: 5%;}
-.Cont .inner ul{display: flex; height: 40px; line-height: 40px;}
-.Cont .inner ul.tabs li{width: 200px; }
-.Cont .inner ul.tabs li.active{text-decoration: 1px solid black; border: 1px solid rgba(163, 156, 156, 0.4);}
-.Cont .inner ul.tabs li a{}
-.Cont .inner> h2 { font-size:34px; padding-bottom:40px; font-weight: bold; color: rgb(10, 29, 68);}
-.Cont .inner> h2:not(:first-child) { border-top:solid 1px #dbdbdb; padding-top:50px;}
+.Cont>.inner ul{display: flex;}
+.Cont>.inner ul.tabs li{width: 200px; }
+.Cont>.inner ul.tabs li.active{text-decoration: 1px double black; border: 1px solid rgba(163, 156, 156, 0.4);}
+.Cont>.inner ul.tabs li a{}
+.Cont h2 { font-size:34px; padding-bottom:40px; font-weight: bold; color: rgb(10, 29, 68);}
+.Cont h2:not(:first-child) { border-top:solid 1px #dbdbdb; padding-top:50px;}
 .Cont h2 span{font-size: 14px; color: #28a5f5; font-weight: normal; display: block;}
-
+.Cont .table-St{border: 50px solid rgba(240, 248, 255, .4);}
+.Cont .table-St::after{content: ''; width: 4%; height: 4px; background-color: #28a5f5; transform: translate(-50px, 100px);}
 .Cont .table-St h3{margin-bottom: 5%; font-weight: bold; font-size: 18px;}
 .Cont .table-St h3:before{display: none;}
 .Cont .table-St .basic{margin: 2% 5%; display: flex; justify-content: space-between;}
@@ -113,10 +111,17 @@ section { width:100%; height:100%; position:relative; padding-top:60px; }
 .Cont .table-St .sizes>ul>li:last-child{font-size: 22px;}
 .Cont .table-St .sizes .size-num ul{display: flex; justify-content: space-around;}
 .Cont .table-St .sizes .size-num ul li{color: #28a5f5; font-weight: bold; font-size: 16px}
-.Cont .table-St #class{}
-.Cont .table-St #class table{border: none;}
-.Cont .table-St #class table th{border: none; background: none; font-weight: bold; font-size: 16px;}
-.Cont .table-St #class table td{border: none; background: none;}
+.Cont .class table{border: none;}
+.Cont .class table th{border: none; background: none;  font-weight: bold; color: lightgrey; text-align: left;}
+.Cont table thead{height: 8vh; line-height: 8vh;}
+.Cont table thead tr{}
+.Cont table thead tr th{font-weight: bold; font-size: 16px;}
+.Cont table tbody{}
+.Cont table tbody th{font-size: 14px; vertical-align: text-top;}
+.Cont table tbody tr td{border: none; background: none;  color: #28a5f5;}
+.Cont table tbody tr td.red{color:#E82D36; font-weight: normal; font-style: normal;}
+.Cont table tbody tr td.blue{color:#5A8FFF; font-weight: normal;}
+.Cont table tbody tr td.txt-center{text-align: center;}
 
 
 
