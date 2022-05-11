@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+<title>JT저축은행 메뉴얼</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" type="text/css" href="../public/css/w/common.css" />
+<script src="../public/js/jquery.min.js"></script>
+<script src="../public/js/common.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="../public/lib/shCoreDefault.css" />
+<!-- <link rel="stylesheet" type="text/css" href="../public/lib/shCore.css" /> -->
+<script src="../public/lib/XRegExp.js"></script>
+<script src="../public/lib/shCore.js"></script>
+<script src="../public/lib/shBrushJScript.js"></script>
+<script src="../public/lib/shBrushXml.js"></script>
+<script src="../public/lib/shBrushCss.js"></script>
+<script type="text/javascript"> SyntaxHighlighter.all();</script>
+
+<script>
+SyntaxHighlighter.defaults['gutter'] = false;
+SyntaxHighlighter.defaults['auto-links'] = false; // 링크 설정 (기본값 true)
+SyntaxHighlighter.defaults['wrap-lines'] = false; // 링크 설정 (기본값 true)
+SyntaxHighlighter.all();
+
+$(document).ready(function(){
+	//메뉴 active
+	$(".menuBtn").click(function () {
+		var aside = $(".Aside");
+		if ($("section").hasClass("aside-closed")) {
+		  $("section").removeClass("aside-closed")
+		} else {
+		    $("section").addClass("aside-closed")
+		}
+	});
+
+});
+
+</script>
+</head>
+<body>
+
+<!-- // header -->
+<!-- <header>
+	<div>
+		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+	</div>
+</header> -->
+
+<header>		
+	<h1><a href="/"><img src="../public/w/img/jt_white.png" alt="JT저축은행" /></a></h1>		
+	<button type="button" class="menuBtn" onclick="openCloseToc()"><span>Menu</span></button>
+</header>
+<!-- header // -->
+
+<!-- centent // -->
+<section>
+	<!-- // Aside -->
+	<article class="Aside">
+		<ol>
+			<li><a href="#" class="on">WEB</a></li>
+			<li><a href="#">MOBILE</a></li>
+		</ol>
+		<nav>
+			<ul class="mainNavi">					
+				<li><a href="./guide.html" class="on">기본환경</a></li>					
+				<li><a href="./typography.html">Typography</a></li>					
+				<li><a href="#">Table or List</a></li>					
+				<li><a href="#">Tab</a></li>					
+				<li><a href="#">Agreement</a></li>					
+				<li><a href="#">Form</a></li>	
+				<li><a href="#">Button</a></li>
+				<li><a href="#">Modal</a></li>
+			</ul>
+		</nav>
+	</article>
+	<!-- Aside // -->
+
+	<!-- // Cont -->
+	<article class="Cont">
+		<h2>기본환경</h2>
+		<div class="table-St">
+			<h3>프로젝트 환경</h3>
+			<table>
+			<caption>환경정의</caption>
+			<colgroup>
+				<col style="width:20%">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">문서 및 버전</th>
+					<td>HTML5, CSS3</td>
+				</tr>
+				<tr>
+					<th scope="row">인코딩</th>
+					<td>UTF-8</td>
+				</tr>
+				<tr>
+					<th scope="row">웹 유형</th>
+					<td>반응형 웹</td>
+				</tr>
+				<tr>
+					<th scope="row">PC 웹 호환성</th>
+					<td>Internet Explorer, Microsoft Edge, Chrome</td>
+				</tr>
+				<tr>
+					<th scope="row">Mobile 웹 호환성</th>
+					<td>안드로이드 6.x 이상, IOS 12.x 이상, 사파리, 크롬, IE11 이상</td>
+				</tr>
+				<tr>
+					<th scope="row">웹 접근성</th>
+					<td>기본준수</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+
+		<div class="table-St td-Bor-L">
+			<h3>HTML 파일/폴더 규칙</h3>
+			<table>
+				<caption>HTML 파일구조</caption>
+				<colgroup>
+					<col style="width:15%">
+					<col style="width:15%">
+					<col style="width:30%">
+					<col style="width:40%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th></th>
+						<th>분류 폴더</th>
+						<th>파일 이름</th>
+						<th>파일 설명</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="15">www/</td>
+						<td></td>
+						<td>ia.html</td>
+						<td>PC 웹 IA 정보구조도</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>sample_.html</td>
+						<td>PC 웹 퍼블 구조 sample</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>table_test.html</td>
+						<td>PC 웹 table 구조 sample</td>
+						
+					</tr>
+					<tr>
+						<td>company/</td>
+						<td></td>
+						<td>은행소개</td>
+					</tr>
+					<tr>
+						<td>customer/</td>
+						<td></td>
+						<td>금융소비자보호안내</td>
+					</tr>
+					<tr>
+						<td>deposit/</td>
+						<td></td>
+						<td>예금</td>
+					</tr>
+					<tr>
+						<td>finance/</td>
+						<td></td>
+						<td>금융서비스</td>
+					</tr>
+					<tr>
+						<td>loan/</td>
+						<td></td>
+						<td>대출</td>
+					</tr>
+					<tr>
+						<td>company/</td>
+						<td></td>
+						<td>은행소개</td>
+					</tr>
+					<tr>
+						<td>main/</td>
+						<td></td>
+						<td>메인 및 500에러</td>
+					</tr>
+					<tr>
+						<td>mobile/</td>
+						<td></td>
+						<td>Mobile 퍼블소스 폴더</td>
+					</tr>
+					<tr>
+						<td>modal/</td>
+						<td></td>
+						<td>PC 웹 modal 및 팝업 모음</td>
+					</tr>
+					<tr>
+						<td>public/</td>
+						<td></td>
+						<td>PC 웹 css폴더 모음</td>
+					</tr>
+					<tr>
+						<td>service/</td>
+						<td></td>
+						<td>고객센터</td>
+					</tr>
+					<tr>
+						<td>topmenu/</td>
+						<td></td>
+						<td>TOP RIGHT MENU</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+
+		<div class="table-St td-Bor-L">
+			<h3>CSS 파일/폴더 규칙</h3>
+			<table>
+				<caption>CSS 파일구조</caption>
+				<colgroup>
+					<col style="width:15%">
+					<col style="width:15%">
+					<col style="width:30%">
+					<col style="width:40%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>분류 폴더</th>
+						<th>서브 폴더</th>
+						<th>파일 이름</th>
+						<th>파일 설명</th>
+					</tr>
+				</thead>
+				<tbody>
+				<!-- // css -->
+					<tr>
+						<td rowspan="26">public/</td>
+						<td rowspan="7">css/</td>
+						<td>common.css</td>
+						<td>[공통] : 초기화, 탭, 버튼, 인풋, text, 약관<br /> 
+						[레이아웃] : 서브홈메뉴</td>
+					</tr>
+					<tr>
+						<td>common01.css</td>
+						<td>[서브] : 컨텐츠, 서브메인</td>
+					</tr>
+					<tr>
+						<td>footer.css</td>
+						<td>[공통] : footer, modal, alert, 버튼, 인풋, table, 블릿
+						<br />[서브] : 서브메인배경</td>
+						
+					</tr>
+					<tr>
+						<td>fullpage.css</td>
+						<td>[메인] : 풀페이지 라이브러리</td>
+					</tr>
+					<tr>
+						<td>main.css</td>
+						<td>[메인] : 메인전체</td>
+					</tr>
+					<tr>
+						<td>reset.css</td>
+						<td>[공통] : 초기화, 폰트</td>
+					</tr>
+					<tr>
+						<td>slick.css</td>
+						<td>[메인] : 이미지슬라이드 라이브러리</td>
+					</tr>
+				<!-- css // -->
+
+				<!-- // datepicker  -->
+					<tr class="tr-Bor-T">
+						<td rowspan="5">datepicker/</td>
+						<td>datepicker-ko.js</td>
+						<td>[공통] : 데이터피커 한글화 라이브러리</td>
+					</tr>
+					<tr>
+						<td>jquery-1.12.4.js</td>
+						<td>[공통] : 데이터피커 라이브러리/td>
+					</tr>
+					<tr>
+						<td>jquery-ui.min.css</td>
+						<td>[공통] : 데이터피커 라이브러리 css</td>
+					</tr>
+					<tr>
+						<td>jquery-ui.min.js</td>
+						<td>[공통] : 데이터피커 라이브러리</td>
+					</tr>
+					<tr>
+						<td>ui-icons_444444_256x240.png</td>
+						<td>[공통] : 데이터피커 이미지</td>
+					</tr>
+				<!--  datepicker // -->
+					
+				<!-- // font  -->
+					<tr class="tr-Bor-T">
+						<td>font/</td>
+						<td></td>
+						<td>폰트</td>
+					</tr>
+				<!--  font // -->
+
+				<!-- // img  -->
+					<tr class="tr-Bor-T">
+						<td rowspan="3">img/</td>
+						<td>agree</td>
+						<td>약관이미지</td>
+					</tr>
+					<tr>
+						<td>main</td>
+						<td>[메인] : 컨텐츠이미지</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>[공통] : 컨켄츠이미지</td>
+					</tr>
+				<!--  img // -->
+
+				<!-- // inc  -->
+					<tr class="tr-Bor-T">
+						<td rowspan="5">inc/</td>
+						<td>common.jsp</td>
+						<td>jsp Emmet</td>
+					</tr>
+					<tr>
+						<td>footer.html</td>
+						<td>[공통] : 푸터</td>
+					</tr>
+					<tr>
+						<td>header.html</td>
+						<td>[공통] : 헤더</td>
+					</tr>
+					<tr>
+						<td>nav.html</td>
+						<td>[공통] : 네비게이션</td>
+					</tr>
+					<tr>
+						<td>sub.html</td>
+						<td>[공통] : 상품안내</td>
+					</tr>
+				<!--  inc // -->
+
+				<!-- // js  -->
+					<tr class="tr-Bor-T">
+						<td rowspan="5">js/</td>
+						<td>agree.js</td>
+						<td>[공동] : 약관 js</td>
+					</tr>
+					<tr>
+						<td>common.js</td>
+						<td>[공동] : 약관 js</td>
+					</tr>
+					<tr>
+						<td>fullpage.js</td>
+						<td>[공통] : 풀페이지 라이브러리 js</td>
+					</tr>
+					<tr>
+						<td>jquery.min.js</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>slick.js</td>
+						<td>[공통] : 이미지슬라이드 라이브러리 js</td>
+					</tr>
+				<!--  js // -->
+				</tbody>
+			</table>
+		</div>
+
+		<h2>표준규칙</h2>
+		<div class="table-St">
+			<h3>기본문서</h3>
+			<pre class="brush:js html-script:true;gutter:false">
+				<!DOCTYPE html>
+				<html lang="ko">
+				<head>
+					<title>JT 저축은행</title>
+					<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+					<meta http-equiv="X-UA-Compatible" content="IE=edge">
+					<link rel="stylesheet" type="text/css" href="../public/css/reset.css" />
+					<link rel="stylesheet" type="text/css" href="../public/css/common.css" />
+					<link rel="stylesheet" type="text/css" href="../public/css/common01.css" />
+					<link rel="stylesheet" type="text/css" href="../public/css/common02.css" />
+					<link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
+					
+					<script src="../public/js/jquery.min.js"></script>
+					<script src="../public/js/common.js"></script>
+				</head>
+				<body> 
+				<!-- // header -->
+				<header>
+				</header>
+				<!-- header // -->
+
+				<!-- // section -->
+				<section>
+				</section>
+				<!-- // section -->
+
+				<!-- // footer -->
+				<footer>
+				</footer>
+				<!-- footer // -->
+				</body>
+				</html>
+			</pre>
+		</div>
+ 
+
+	</article>
+	<!-- Cont // -->
+
+</section>
+<!-- centent // -->
+</body>
+</html>
