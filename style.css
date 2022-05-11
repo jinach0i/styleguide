@@ -114,7 +114,7 @@ section { width:100%; height:100%; position:relative; padding-top:60px; }
 .Cont .classbox{}
 .Cont .classbox>ul{}
 .Cont .classbox>ul>li{}
-.Cont .classbox>ul>li>ul{display: flex;}
+.Cont .classbox>ul>li ul{display: flex;}
 .Cont .class table{border: none;}
 .Cont .class table th{border: none; background: none;  font-weight: bold; color: lightgrey; text-align: left;}
 .Cont table thead{height: 8vh; line-height: 8vh;}
