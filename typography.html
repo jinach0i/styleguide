@@ -1,217 +1,219 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+	<title>JT저축은행 매뉴얼 - 타이포그래피</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+	<link rel="stylesheet" type="text/css" href="../public/css/w/common.css" />
+	<link rel="stylesheet" type="text/css" href="../public/lib/shCoreDefault.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="../public/lib/shCore.css" /> -->
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/common.js"></script>
+	<script src="https://kit.fontawesome.com/63e5a82675.js" crossorigin="anonymous"></script>
+	<script src="../public/lib/XRegExp.js"></script>
+	<script src="../public/lib/shCore.js"></script>
+	<script src="../public/lib/shBrushJScript.js"></script>
+	<script src="../public/lib/shBrushXml.js"></script>
+	<script src="../public/lib/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	<script>
+		SyntaxHighlighter.defaults['gutter'] = false;
+		SyntaxHighlighter.defaults['auto-links'] = false; // 링크 설정 (기본값 true)
+		SyntaxHighlighter.defaults['wrap-lines'] = false; // 링크 설정 (기본값 true)
+		SyntaxHighlighter.all();
+		$(document).ready(function () {
+			//메뉴 active
+			$(".menuBtn").click(function () {
+				var aside = $(".Aside");
+				if ($("section").hasClass("aside-closed")) {
+					$("section").removeClass("aside-closed")
+				} else {
+					$("section").addClass("aside-closed")
+				}
+			});
 
-<title>JT저축은행 메뉴얼</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-<link rel="stylesheet" type="text/css" href="./style.css" />
-<link rel="stylesheet" type="text/css" href="../public/css/w/common.css" />
-<script src="../public/js/jquery.min.js"></script>
-<script src="../public/js/common.js"></script>
+		});
 
-
-<link rel="stylesheet" type="text/css" href="../public/lib/shCoreDefault.css" />
-<!-- <link rel="stylesheet" type="text/css" href="../public/lib/shCore.css" /> -->
-<script src="https://kit.fontawesome.com/63e5a82675.js" crossorigin="anonymous"></script>
-<script src="../public/lib/XRegExp.js"></script>
-<script src="../public/lib/shCore.js"></script>
-<script src="../public/lib/shBrushJScript.js"></script>
-<script src="../public/lib/shBrushXml.js"></script>
-<script src="../public/lib/shBrushCss.js"></script>
-<script type="text/javascript"> SyntaxHighlighter.all();</script>
-
-<script>
-SyntaxHighlighter.defaults['gutter'] = false;
-SyntaxHighlighter.defaults['auto-links'] = false; // 링크 설정 (기본값 true)
-SyntaxHighlighter.defaults['wrap-lines'] = false; // 링크 설정 (기본값 true)
-SyntaxHighlighter.all();
-
-$(document).ready(function(){
-	//메뉴 active
-	$(".menuBtn").click(function () {
-		var aside = $(".Aside");
-		if ($("section").hasClass("aside-closed")) {
-		  $("section").removeClass("aside-closed")
-		} else {
-		    $("section").addClass("aside-closed")
-		}
-	});
-
-});
-
-</script>
+	</script>
 </head>
 <body>
-
-<!-- // header -->
-<!-- <header>
-	<div>
-		<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
-	</div>
-</header> -->
-
-<header>		
-	<h1><a href="/"><img src="../public/w/img/jt_white.png" alt="JT저축은행" /></a></h1>		
-	<button type="button" class="menuBtn" onclick="openCloseToc()"><span>Menu</span></button>
-</header>
-<!-- header // -->
-
-<!-- centent // -->
-<section>
-	<!-- // Aside -->
-	<article class="Aside">
-		<ol>
-			<li><a href="#" class="on">WEB</a></li>
-			<li><a href="#">MOBILE</a></li>
-		</ol>
-		<nav>
-			<ul class="mainNavi">					
-				<li><a href="./guide.html">기본환경</a><i class="fa-solid fa-arrow-right-long"></i></li>					
-				<li><a href="./typography.html" class="on">Typography </a><i class="fa-solid fa-arrow-right-long"></i></li>			
-				<li><a href="#">Table or List</a><i class="fa-solid fa-arrow-right-long"></i></li>					
-				<li><a href="#">Tab</a><i class="fa-solid fa-arrow-right-long"></i></li>					
-				<li><a href="#">Agreement</a><i class="fa-solid fa-arrow-right-long"></i></li>					
-				<li><a href="#">Form</a><i class="fa-solid fa-arrow-right-long"></i></li>	
-				<li><a href="#">Button</a><i class="fa-solid fa-arrow-right-long"></i></li>
-				<li><a href="#">Modal</a><i class="fa-solid fa-arrow-right-long"></i></li>
-			</ul>
-		</nav>
-	</article>
-	<!-- Aside // -->
-
-	<!-- // Cont -->
-	<article class="Cont">
-			<h2><span>JT저축은행</span>Typography</h2>
-			<div class="table-St">
-					<div class="basic">
-						<div class="name">
-							<span class="title">폰트 이름</span>
-							<p>NotoSansCJKkr</p>
+	<div id="wrap">
+		<!-- // header -->
+		<!-- <header>
+		<div>
+			<h1><a href="/"><img src="../public/img/logo.png" alt="JT저축은행" /></a></h1>
+		</div>
+		</header> -->
+		<header>
+			<h1><a href="/"><img src="../public/w/img/jt_white.png" alt="JT저축은행" /></a></h1>
+			<button type="button" class="menuBtn" onclick="openCloseToc()"><span>Menu</span></button>
+		</header>
+		<!-- header // -->
+		<!-- centent // -->
+		<div id="container">
+			<!-- // Aside -->
+			<aside class="Aside">
+				<ol>
+					<li><a href="#" class="on">WEB</a></li>
+					<li><a href="#">MOBILE</a></li>
+				</ol>
+				<nav>
+					<ul class="mainNavi">
+						<li><a href="./guide.html" class="on">기본환경</a><i class="fa-solid fa-arrow-right-long"></i></li>
+						<li><a href="./typography.html">Typography</a><i class="fa-solid fa-arrow-right-long"></i></li>
+						<li><a href="./tableorlist.html">Table or List</a><i class="fa-solid fa-arrow-right-long"></i></li>
+						<li><a href="./tabs.html">Tab</a><i class="fa-solid fa-arrow-right-long"></i></li>
+						<li><a href="./agreements.html">Agreement</a><i class="fa-solid fa-arrow-right-long"></i></li>
+						<li><a href="./forms.html">Form</a><i class="fa-solid fa-arrow-right-long"></i></li>
+						<li><a href="./buttons.html">Button</a><i class="fa-solid fa-arrow-right-long"></i></li>
+						<li><a href="./modals.html">Modal</a><i class="fa-solid fa-arrow-right-long"></i></li>
+					</ul>
+				</nav>
+			</aside>
+			<!-- Aside // -->
+			<!-- // Cont -->
+			<section class="contents">
+				<h2><span>JT저축은행</span>Typography</h2>
+				<div class="inner">
+					<h3 class="title">FONT BASIC</h3>
+					<div class="table-St">
+						<div class="basic">
+							<div class="name">
+								<span class="title">Font Name</span>
+								<p>NotoSansCJKkr</p>
+							</div>
+							<div class="weights">
+								<span class="title">Font Weights</span>
+								<ul>
+									<li>Normal</li>
+									<li class="bold">Bold</li>
+								</ul>
+							</div>
 						</div>
-						<div class="weights">
-							<span class="title">폰트 두께</span>
+						<div class="sizes">
+							<span class="title">Font Sizes</span>
 							<ul>
-								<li>Normal</li>
-								<li class="bold">Bold</li>
+								<li class="size10">
+									<ul>
+										<li>가</li>
+										<li>Aa</li>
+									</ul>
+								</li>
+								<li class="size14">
+									<ul>
+										<li>가</li>
+										<li>Aa</li>
+									</ul>
+								</li>
+								<li class="size16">
+									<ul>
+										<li>가</li>
+										<li>Aa</li>
+									</ul>
+								</li>
+								<li class="size18">
+									<ul>
+										<li>가</li>
+										<li>Aa</li>
+									</ul>
+								</li>
+								<li class="size22">
+									<ul>
+										<li>가</li>
+										<li>Aa</li>
+									</ul>
+								</li>
 							</ul>
+							<div class="size-num">
+								<ul>
+									<li>10px</li>
+									<li>14px</li>
+									<li>16px</li>
+									<li>18px</li>
+									<li>22px</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				<div class="sizes">
-					<span class="title">폰트 크기</span>
-					<ul>
-						<li class="size10">
+					<div class="class">
+						<h3 class="title">FONT CLASS</h3>
+						<div class="classbox">
 							<ul>
-								<li>가</li>
-								<li>Aa</li>
+								<li>
+									<ul>
+										<li class="red">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+										<li>.bulR & .txtR</li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li>.txtBl</li>
+										<li class="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-						<li class="size14">
-							<ul>
-								<li>가</li>
-								<li>Aa</li>
-							</ul>
-						</li>
-						<li class="size16">
-							<ul>
-								<li>가</li>
-								<li>Aa</li>
-							</ul>
-						</li>
-						<li class="size18">
-							<ul>
-								<li>가</li>
-								<li>Aa</li>
-							</ul>
-						</li>
-						<li class="size22">
-							<ul>
-								<li>가</li>
-								<li>Aa</li>
-							</ul>
-						</li>
-					</ul>
-					<div class="size-num">
+						</div>
+						<!-- <br><br><br>
+						<table>
+							<caption>Classes List</caption>
+							<colgroup>
+								<col width="15%">
+								<col width="20%">
+								<col width="55%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th></th>
+									<th>클래스명</th>
+									<th>예시</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th rowspan="3">폰트 색상</th>
+									<td>.bulR</td>
+									<td class="red" rowspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Veritatis blanditiis sit ab porro facilis, velit harum, dolorum ipsa explicabo
+										fugiat aspernatur minima tempora iusto ex modi ratione corrupti! Ea, sit!</td>
+								</tr>
+								<tr>
+									<td>.txtR</td>
+								</tr>
+								<tr>
+									<td>.txtBl</td>
+									<td class="blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
+										impedit necessitatibus fugiat error temporibus pariatur, est numquam dolores minus
+										fuga nisi illo. Earum ipsum illum voluptatum aut nulla iusto odio.</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table> -->
+					</div>
+					<hr>
+					<h3 class="title">COLORS</h3>
+					<div class="color">
+						<h4 class="title">BRAND COLORS</h4>
 						<ul>
-							<li>10px</li>
-							<li>14px</li>
-							<li>16px</li>
-							<li>18px</li>
-							<li>22px</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
 						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="class">
-				<span class="title">Classes</span>
-				<div class="classbox">
-				  <ul>
-				    <li>
-				      <ul>
-				        <li>JT저축은행입니다.</li>
-				        <li>.txtR</li>
-				      </ul>
-				    </li>
-				    <li>
-				      <ul>
-				        <li>클래스명</li>
-				        <li>JT저축은행입니다.</li>
-				      </ul>
-				    </li>
-				  </ul>
-				</div>
-				<table>
-					<caption>Classes List</caption>
-					<colgroup>
-						<col width="15%">
-						<col width="20%">
-						<col width="55%">
-					</colgroup>
-					<thead>
-						<tr>
-							<th></th>
-							<th>클래스명</th>
-							<th>예시</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th rowspan="3">폰트 색상</th>
-							<td>.bulR</td>
-							<td class="red" rowspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis blanditiis sit ab porro facilis, velit harum, dolorum ipsa explicabo fugiat aspernatur minima tempora iusto ex modi ratione corrupti! Ea, sit!</td>
-						</tr>
-						<tr>
-							<td>.txtR</td>
-						</tr>
-						<tr>
-							<td>.txtBl</td>
-							<td class="blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae impedit necessitatibus fugiat error temporibus pariatur, est numquam dolores minus fuga nisi illo. Earum ipsum illum voluptatum aut nulla iusto odio.</td>
-							
-						</tr>
-						<tr>
-							<th>여백</th>
-							<td></td>
-							<td></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-	</article>
-	<!-- Cont // -->
-
-</section>
-<!-- centent // -->
-<script>
-	$(function () {
-		$('.tabs li').click(function(){
-		var i=$(this).index();
-		$('.tabs li').removeClass('active');
-		$(this).addClass('active');
-		$('.table-St').css({display:'none'})
-		$('.table-St').eq(i).css({display:'block'})
-		});
-	})
-</script>
+			</section>
+			<!-- Cont // -->
+		</div>
+		<!-- centent // -->
+	</div>
 </body>
+
 </html>
