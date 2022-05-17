@@ -9,9 +9,10 @@
     <link rel="stylesheet" type="text/css" href="../public/css/w/common.css" />
     <link rel="stylesheet" type="text/css" href="../public/lib/shCoreDefault.css" />
     <!-- <link rel="stylesheet" type="text/css" href="../public/lib/shCore.css" /> -->
-    <script src="../public/js/jquery.min.js"></script>
-    <script src="../public/js/common.js"></script>
     <script src="https://kit.fontawesome.com/63e5a82675.js" crossorigin="anonymous"></script>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/common.js" defer></script>
     <script src="../public/lib/XRegExp.js"></script>
     <script src="../public/lib/shCore.js"></script>
     <script src="../public/lib/shBrushJScript.js"></script>
@@ -47,7 +48,7 @@
     <div id="container">
         <aside class="Aside">
             <ol>
-                <li><a href="#" class="on">WEB</a></li>
+                <li class="on"><a href="#">WEB</a></li>
                 <li><a href="#">MOBILE</a></li>
             </ol>
             <nav>
@@ -69,12 +70,13 @@
                 <h3 class="title">메인 모달</h3>
                 <h4 class="subtitle">Preview</h4>
                 <div class="preview">
+                    <button class="modal-on">모달 미리 보기</button>
                     <div class="Acuon-Modal event-popup on" id="20220429000006_mpopup">
                         <div class="modal-type03" style=" left: 180px; top: 100px;">
                             <dl>
                                 <dd>
                                     <div>
-                                        <img src="./20220512123657_0_20220429131900_0_이벤트1_jpg.jpg" alt="" onclick="window.open('https://blog.naver.com/jtsavingsbank')" style="cursor: pointer; max-height: 630px">					
+                                        <img src="./public/w/img/20220512123657_0_20220429131900_0_이벤트1_.jpg" alt="모달창" onclick="window.open('https://blog.naver.com/jtsavingsbank')" style="cursor: pointer; max-height: 630px">					
                                     </div>
                                     <p class="subBtnWrap">
                                         <button type="submit" title="오늘하루닫기" class="lone_ok" onclick="modalOffDay('20220429000006_mpopup',1);">하루열지않기</button>
@@ -87,25 +89,11 @@
                 </div>
                 <h4 class="subtitle">How to</h4>
                 <div class="howto">
-                    <textarea name="" id="" cols="30" rows="20">
-    <div class="Acuon-Modal event-popup on" id="20220429000006_mpopup">
-        <div class="modal-type03">
-            <dl>
-                <dd>
-                    <div>
-                        <img src="" alt="" onclick="window.open('url')">					
-                    </div>
-                    <p class="subBtnWrap">
-                        <button type="submit" title="오늘하루닫기" class="lone_ok" 
-                            onclick="modalOffDay('20220429000006_mpopup',1);">하루열지않기</button>
-                        <button type="button" onclick="modalOff('20220429000006_mpopup');" 
-                            title="취소" class="lone_cancel">닫기</button>
-                    </p>
-                </dd>
-            </dl>
-        </div>
-    </div>
-                    </textarea>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bGLwbJG" data-user="heiseychoi" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/heiseychoi/pen/bGLwbJG">
+                        회사]modal</a> by Heisey (<a href="https://codepen.io/heiseychoi">@heiseychoi</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
                 </div>
             </div>
         </div>

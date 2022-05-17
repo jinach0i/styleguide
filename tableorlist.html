@@ -1,68 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>JT저축은행 매뉴얼 - 버튼</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-        <link rel="stylesheet" type="text/css" href="./style.css" />
-        <link rel="stylesheet" type="text/css" href="../public/css/w/common.css" />
-        <link rel="stylesheet" type="text/css" href="../public/lib/shCoreDefault.css" />
-        <!-- <link rel="stylesheet" type="text/css" href="../public/lib/shCore.css" /> -->
-        <script src="../public/js/jquery.min.js"></script>
-        <script src="../public/js/common.js"></script>
-        <script src="https://kit.fontawesome.com/63e5a82675.js" crossorigin="anonymous"></script>
-        <script src="../public/lib/XRegExp.js"></script>
-        <script src="../public/lib/shCore.js"></script>
-        <script src="../public/lib/shBrushJScript.js"></script>
-        <script src="../public/lib/shBrushXml.js"></script>
-        <script src="../public/lib/shBrushCss.js"></script>
-        <script type="text/javascript">SyntaxHighlighter.all();</script>
-        <script>
-            SyntaxHighlighter.defaults['gutter'] = false;
-            SyntaxHighlighter.defaults['auto-links'] = false; // 링크 설정 (기본값 true)
-            SyntaxHighlighter.defaults['wrap-lines'] = false; // 링크 설정 (기본값 true)
-            SyntaxHighlighter.all();
-            $(document).ready(function () {
-                //메뉴 active
-                $(".menuBtn").click(function () {
-                    var aside = $(".Aside");
-                    if ($("section").hasClass("aside-closed")) {
-                        $("section").removeClass("aside-closed")
-                    } else {
-                        $("section").addClass("aside-closed")
-                    }
-                });
-    
+
+<head>
+    <title>JT저축은행 매뉴얼 - 테이블</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="../public/css/w/common.css" />
+    <link rel="stylesheet" type="text/css" href="../public/lib/shCoreDefault.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../public/lib/shCore.css" /> -->
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/common.js"></script>
+    <script src="https://kit.fontawesome.com/63e5a82675.js" crossorigin="anonymous"></script>
+    <script src="../public/lib/XRegExp.js"></script>
+    <script src="../public/lib/shCore.js"></script>
+    <script src="../public/lib/shBrushJScript.js"></script>
+    <script src="../public/lib/shBrushXml.js"></script>
+    <script src="../public/lib/shBrushCss.js"></script>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <script>
+        SyntaxHighlighter.defaults['gutter'] = false;
+        SyntaxHighlighter.defaults['auto-links'] = false; // 링크 설정 (기본값 true)
+        SyntaxHighlighter.defaults['wrap-lines'] = false; // 링크 설정 (기본값 true)
+        SyntaxHighlighter.all();
+        $(document).ready(function () {
+            //메뉴 active
+            $(".menuBtn").click(function () {
+                var aside = $(".Aside");
+                if ($("section").hasClass("aside-closed")) {
+                    $("section").removeClass("aside-closed")
+                } else {
+                    $("section").addClass("aside-closed")
+                }
             });
-    
-        </script>
-    </head>
-    <body>
-        <div id="wrap">
-            <header>
-                    <h1><a href="/"><img src="../public/w/img/jt_white.png" alt="JT저축은행" /></a></h1>
-                    <button type="button" class="menuBtn" onclick="openCloseToc()"><span>Menu</span></button>
-            </header>
-            <div id="container">
-                <aside class="Aside">
-                        <ol>
-                            <li><a href="#" class="on">WEB</a></li>
-                            <li><a href="#">MOBILE</a></li>
-                        </ol>
-                        <nav>
-                            <ul class="mainNavi">					
-                                <li><a href="./guide.html" class="on">기본환경</a><i class="fa-solid fa-arrow-right-long"></i></li>					
-                                <li><a href="./typography.html">Typography</a><i class="fa-solid fa-arrow-right-long"></i></li>					
-                                <li><a href="./tableorlist.html">Table or List</a><i class="fa-solid fa-arrow-right-long"></i></li>					
-                                <li><a href="./tabs.html">Tab</a><i class="fa-solid fa-arrow-right-long"></i></li>					
-                                <li><a href="./agreements.html">Agreement</a><i class="fa-solid fa-arrow-right-long"></i></li>					
-                                <li><a href="./forms.html">Form</a><i class="fa-solid fa-arrow-right-long"></i></li>	
-                                <li><a href="./buttons.html">Button</a><i class="fa-solid fa-arrow-right-long"></i></li>
-                                <li><a href="./modals.html">Modal</a><i class="fa-solid fa-arrow-right-long"></i></li>
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1><a href="/"><img src="../public/w/img/jt_white.png" alt="JT저축은행" /></a></h1>
+            <button type="button" class="menuBtn" onclick="openCloseToc()"><span>Menu</span></button>
+        </header>
+        <div id="container">
+            <aside class="Aside">
+                <ol>
+                    <li class="on"><a href="#">WEB</a></li>
+                    <li><a href="#">MOBILE</a></li>
+                </ol>
+                <nav>
+                    <ul class="mainNavi">
+                        <li><a href="./guide.html">기본환경</a><i class="fa-solid fa-arrow-right-long"></i></li>
+                        <li><a href="./typography.html">Typography</a><i class="fa-solid fa-arrow-right-long"></i></li>
+                        <li><a href="./tableorlist.html" class="on">Table or List</a><i
+                                class="fa-solid fa-arrow-right-long"></i></li>
+                        <li><a href="./tabs.html">Tab</a><i class="fa-solid fa-arrow-right-long"></i></li>
+                        <li><a href="./agreements.html">Agreement</a><i class="fa-solid fa-arrow-right-long"></i></li>
+                        <li><a href="./forms.html">Form</a><i class="fa-solid fa-arrow-right-long"></i></li>
+                        <li><a href="./buttons.html">Button</a><i class="fa-solid fa-arrow-right-long"></i></li>
+                        <li><a href="./modals.html">Modal</a><i class="fa-solid fa-arrow-right-long"></i></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="contents">
+                <h2><span>JT저축은행</span>Table and list</h2>
+                <div class="inner">
+                    <h3 class="title">Tables</h3>
+                    <div class="table">
+                        <h4 class="subtitle">Preview</h4>
+                        <div class="preview">
+                            <div class="sub-table">
+                                <table summary="">
+                                    <caption></caption>
+                                    <colgroup>
+                                        <col width="15%">
+                                        <col width="*">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>제목</th>
+                                            <td>내용</td>
+                                        </tr>
+                                        <tr>
+                                            <th>제목</th>
+                                            <td>
+                                                <br>
+                                                <div class="table-St th-bg th-br td-br td-bt tc pdTB10">
+                                                    <table summary="">
+                                                        <caption></caption>
+                                                        <colgroup>
+                                                            <col width="50%">
+                                                            <col width="25%">
+                                                            <col width="25%">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>대출금액(증액대출 포함)</th>
+                                                                <th class="bor-Rnon" colspan="2">세액</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>5천만원 이하</td>
+                                                                <td>비과세</td>
+                                                                <td class="bdB0 bor-Rnon" rowspan="3">저축은행과 고객이 각 50%씩 부담</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5천만원 초과 ~ 1억원 이하</td>
+                                                                <td>7만원</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1억원 초과 ~ 10억원 이하</td>
+                                                                <td>15만원</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>제목</th>
+                                            <td>내용</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <h3 class="subtitle">How To</h3>
+                        <div class="howto">
+                            <textarea name="" id="tabarea" cols="30" rows="10">
+                                <table class="sub-table">
+                                    <table summary="">
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col width="15%">
+                                            <col width="*">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>제목</th>
+                                                <td>내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th>제목</th>
+                                                <td>
+                                                    겹테이블 시작
+                                                    <div class="table-St th-bg th-br td-br td-bt tc pdTB10">
+                                                        <table summary="">
+                                                            <caption></caption>
+                                                            <colgroup>
+                                                                <col width="50%">
+                                                                <col width="25%">
+                                                                <col width="25%">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>대출금액(증액대출 포함)</th>
+                                                                    <th class="bor-Rnon" colspan="2">세액</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>5천만원 이하</td>
+                                                                    <td>비과세</td>
+                                                                    <td class="bdB0 bor-Rnon" rowspan="3">저축은행과 고객이 각 50%씩 부담</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>5천만원 초과 ~ 1억원 이하</td>
+                                                                    <td>7만원</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1억원 초과 ~ 10억원 이하</td>
+                                                                    <td>15만원</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>제목</th>
+                                                <td>내용</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </table>
+                            </textarea>
+                        </div>
+                    </div>
+                    <h3 class="title">Lists</h3>
+                    <div class="list">
+                        <h4 class="subtitle">Preview</h4>
+                        <div class="preview">
+                            <ul>
+                                <li class="star">목록입니다.</li>
+                                <li class="hypn">목록입니다.</li>
+                                <li class="dot">목록입니다.</li>
+                                <li class="square">목록입니다.</li>
+                                <li class="rfrnc">목록입니다.</li>
                             </ul>
-                        </nav>
-                    </aside>
-</div>
+                        </div>
+                        <h3 class="subtitle">How To</h3>
+                        <div class="howto">
+                            <textarea name="" id="tabarea" cols="30" rows="8">
+                                <ul>
+                                    <li class="star">* 모양</li>
+                                    <li class="hypn">- 모양</li>
+                                    <li class="dot">점 모양</li>
+                                    <li class="square">네모</li>
+                                    <li class="rfrnc">당구장 표시</li>
+                                </ul>
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

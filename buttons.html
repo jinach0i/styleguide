@@ -47,35 +47,81 @@
         <div id="container">
             <aside class="Aside">
                     <ol>
-                        <li><a href="#" class="on">WEB</a></li>
-                        <li><a href="#">MOBILE</a></li>
+                        <li class="on"><a href="#">WEB</a></li>
+                        <li class="mobmenu"><a href="#">MOBILE</a></li>
                     </ol>
                     <nav>
                         <ul class="mainNavi">					
-                            <li><a href="./guide.html" class="on">기본환경</a><i class="fa-solid fa-arrow-right-long"></i></li>					
+                            <li><a href="./guide.html">기본환경</a><i class="fa-solid fa-arrow-right-long"></i></li>					
                             <li><a href="./typography.html">Typography</a><i class="fa-solid fa-arrow-right-long"></i></li>					
                             <li><a href="./tableorlist.html">Table or List</a><i class="fa-solid fa-arrow-right-long"></i></li>					
                             <li><a href="./tabs.html">Tab</a><i class="fa-solid fa-arrow-right-long"></i></li>					
                             <li><a href="./agreements.html">Agreement</a><i class="fa-solid fa-arrow-right-long"></i></li>					
                             <li><a href="./forms.html">Form</a><i class="fa-solid fa-arrow-right-long"></i></li>	
-                            <li><a href="./buttons.html">Button</a><i class="fa-solid fa-arrow-right-long"></i></li>
+                            <li><a href="./buttons.html" class="on">Button</a><i class="fa-solid fa-arrow-right-long"></i></li>
                             <li><a href="./modals.html">Modal</a><i class="fa-solid fa-arrow-right-long"></i></li>
                         </ul>
                     </nav>
+                    <nav class="mobile-nav">
+                        <ul>					
+                            <li><a href="./mob-guide.html">기본환경</a><i class="fa-solid fa-arrow-right-long"></i></li>					
+                            <li><a href="./mob-typography.html">Typography</a><i class="fa-solid fa-arrow-right-long"></i></li>					
+                            <li><a href="./mob-tableorlist.html">Table or List</a><i class="fa-solid fa-arrow-right-long"></i></li>					
+                            <li><a href="./mob-tabs.html">Tab</a><i class="fa-solid fa-arrow-right-long"></i></li>					
+                            <li><a href="./mob-agreements.html">Agreement</a><i class="fa-solid fa-arrow-right-long"></i></li>					
+                            <li><a href="./mob-forms.html">Form</a><i class="fa-solid fa-arrow-right-long"></i></li>	
+                            <li><a href="./mob-buttons.html" class="on">Button</a><i class="fa-solid fa-arrow-right-long"></i></li>
+                            <li><a href="./mob-modals.html">Modal</a><i class="fa-solid fa-arrow-right-long"></i></li>
+                        </ul>
+                    </nav>
                 </aside>
-            <article>
-                    <section class="inner">
-                        <h2><span>JT저축은행</span>Buttons</h2>
-                        <div class="contents">
-                            <div class="btnbox">
-                                <button class="btnB01">.btnB01</button>
-                                <button class="btnG01">.btnG01</button>
-                                <button class="btnWh01">.btnWh01</button>
-                                <button class="btnNv01">.btnNv01</button>
-                            </div>
+            <div class="contents">
+                <h2><span>JT저축은행</span>Buttons</h2>
+                <div class="inner">
+                        <h3 class="title">버튼</h3>
+                        <h4 class="subtitle">Preview</h4>
+                        <div class="preview">
+                            <button class="btnB01">.btnB01</button>
+                            <button class="btnG01">.btnG01</button>
+                            <button class="btnWh01">.btnWh01</button>
+                            <button class="btnNv01">.btnNv01</button>
                         </div>
-                    </section>
-                </article>
+                        <h4 class="subtitle">How to</h4>
+                        <div class="howto">
+                            <textarea name="" id="" cols="20" rows="30">
+                                CSS:
+
+                                .btnB01{width: 300px;
+                                    height: 50px;
+                                    color: #fff;
+                                    background-color: #5A8FFF;
+                                    border: none;
+                                    border-radius: 10px;
+                                    cursor: pointer;}
+                                .btnG01{width: 300px;
+                                    height: 50px;
+                                    background-color: #F2F2F2;
+                                    border: none;
+                                    border-radius: 10px;
+                                    cursor: pointer;}
+                                .btnWh01{height: 30px;
+                                    padding: 5px 20px;
+                                    font-size: 1rem;
+                                    background-color: #fff;
+                                    border: 1px solid #DADCE1;
+                                    border-radius: 5px;
+                                    cursor: pointer;}
+                                .btnNv01{height: 40px;
+                                    padding: 10px 27px;
+                                    color: #fff;
+                                    background-color: #0051A2;
+                                    border: none;
+                                    border-radius: 5px;
+                                    cursor: pointer;}    
+                            </textarea>
+                        </div>
+                    </div>
+            </div>
         </div>
     </div>
 </body>

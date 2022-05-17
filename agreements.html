@@ -10,8 +10,9 @@
     <link rel="stylesheet" type="text/css" href="../public/lib/shCoreDefault.css" />
     <!-- <link rel="stylesheet" type="text/css" href="../public/lib/shCore.css" /> -->
     <script src="../public/js/jquery.min.js"></script>
-    <script src="../public/js/common.js"></script>
     <script src="https://kit.fontawesome.com/63e5a82675.js" crossorigin="anonymous"></script>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <script src="../public/js/common.js" defer></script>
     <script src="../public/lib/XRegExp.js"></script>
     <script src="../public/lib/shCore.js"></script>
     <script src="../public/lib/shBrushJScript.js"></script>
@@ -47,7 +48,7 @@
         <div id="container">
             <aside class="Aside">
                 <ol>
-                    <li><a href="#" class="on">WEB</a></li>
+                    <li class="on"><a href="#">WEB</a></li>
                     <li><a href="#">MOBILE</a></li>
                 </ol>
                 <nav>
@@ -64,67 +65,64 @@
                 </nav>
             </aside>
             <div class="contents">
-                    <h2><span>JT저축은행</span>Agreements</h2>
-                    <div class="inner">
-                        <h3 class="title">전체 동의</h3>
-                        <h4 class="subtitle">Preview</h4>
-                        <div class="preview">
-                            <div class="secTitBox02">
-                                <div>개인(신용)정보 관련 동의</div>
-                                <button type="button" title="약관전체동의" class="btnNv01" id="btnNv01">약관전체동의</button>
-                            </div>
-                            <ul class="agreeList reqChk">
-                                <li class="agreeHead">
-                                    <div>[필수] 개인(신용)정보 수집·이용·제공 동의서(여신금융거래)<span class="txtR" id="reqChk02_n">미확인</span><span class="txtBl" id="reqChk02_y" style="display: none;">확인</span></div>
-                                    <button type="button" title="개인(신용)정보 수집·이용·제공 동의서(여신금융거래) 자세히보기" class="btnWh01" onclick="javascript:goPdfViewer('20220414000010','reqChk02');">자세히보기</button>
-                                </li>
-                                <li class="agreeBody">
-                                    <div>- 개인(신용)정보를 수집·이용 동의여부</div>
-                                    <ul class="inpRadio">
-                                        <li class="un_chk"><input type="radio" id="chk03-1" name="check03_2" checked="checked">
-                                            <label for="chk03-1">동의하지않음</label></li>
-                                        <li class="chk"><input type="radio" id="chk03-2" name="check03_2"> <label for="chk03-2">동의함</label></li>
-                                    </ul>
-                                </li>
-                                <li class="agreeBody">
-                                    <div>- 고유식별정보를 수집·이용 동의여부</div>
-                                    <ul class="inpRadio">
-                                        <li class="un_chk"><input type="radio" id="chk04-1" name="check03_3" checked="checked">
-                                            <label for="chk04-1">동의하지않음</label></li>
-                                        <li class="chk"><input type="radio" id="chk04-2" name="check03_3"> <label for="chk04-2">동의함</label></li>
-                                    </ul>
-                                </li>
-                                <li class="agreeBody">
-                                    <div>- 개인(신용)정보를 제공 동의여부</div>
-                                    <ul class="inpRadio">
-                                        <li class="un_chk"><input type="radio" id="chk05-1" name="check03_4" checked="checked">
-                                            <label for="chk05-1">동의하지않음</label></li>
-                                        <li class="chk"><input type="radio" id="chk05-2" name="check03_4"> <label for="chk05-2">동의함</label></li>
-                                    </ul>
-                                </li>
-                                <li class="agreeBody">
-                                    <div>- 고유식별정보를 제공 동의여부</div>
-                                    <ul class="inpRadio">
-                                        <li class="un_chk"><input type="radio" id="chk06-1" name="check03_5" checked="checked">
-                                            <label for="chk06-1">동의하지않음</label></li>
-                                        <li class="chk"><input type="radio" id="chk06-2" name="check03_5">
-                                            <label for="chk06-2">동의함</label></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                <h2><span>JT저축은행</span>Agreements</h2>
+                <div class="inner">
+                    <h3 class="title">전체 동의</h3>
+                    <h4 class="subtitle">Preview</h4>
+                    <div class="preview">
+                        <div class="secTitBox02">
+                            <div>개인(신용)정보 관련 동의</div>
+                            <button type="button" title="약관전체동의" class="btnNv01" id="btnNv01">약관전체동의</button>
                         </div>
-                        <h3 class="title">How To</h3>
-                        <div class="howto">
-                            <textarea name="" id="tabarea" cols="30" rows="10">
-                    <ul class="tabWrap">
-                        <li class="on"><a href="javascript:" >ul.tabWrap>li.on</a></li>
-                        <li><a href="javascript:">ul.tabWrap>li</a></li>
-                        <li><a href="javascript:">ul.tabWrap>li</a></li>
-                        <li><a href="javascript:">ul.tabWrap>li</a></li>
-                    </ul>
-                            </textarea>
-                        </div>
+                        <ul class="agreeList reqChk">
+                            <li class="agreeHead">
+                                <div>[필수] 개인(신용)정보 수집·이용·제공 동의서(여신금융거래)<span class="txtR" id="reqChk02_n">미확인</span><span class="txtBl" id="reqChk02_y" style="display: none;">확인</span></div>
+                                <button type="button" title="개인(신용)정보 수집·이용·제공 동의서(여신금융거래) 자세히보기" class="btnWh01" onclick="javascript:goPdfViewer('20220414000010','reqChk02');">자세히보기</button>
+                            </li>
+                            <li class="agreeBody">
+                                <div>- 개인(신용)정보를 수집·이용 동의여부</div>
+                                <ul class="inpRadio">
+                                    <li class="un_chk"><input type="radio" id="chk03-1" name="check03_2" checked="checked">
+                                        <label for="chk03-1">동의하지않음</label></li>
+                                    <li class="chk"><input type="radio" id="chk03-2" name="check03_2"> <label for="chk03-2">동의함</label></li>
+                                </ul>
+                            </li>
+                            <li class="agreeBody">
+                                <div>- 고유식별정보를 수집·이용 동의여부</div>
+                                <ul class="inpRadio">
+                                    <li class="un_chk"><input type="radio" id="chk04-1" name="check03_3" checked="checked">
+                                        <label for="chk04-1">동의하지않음</label></li>
+                                    <li class="chk"><input type="radio" id="chk04-2" name="check03_3"> <label for="chk04-2">동의함</label></li>
+                                </ul>
+                            </li>
+                            <li class="agreeBody">
+                                <div>- 개인(신용)정보를 제공 동의여부</div>
+                                <ul class="inpRadio">
+                                    <li class="un_chk"><input type="radio" id="chk05-1" name="check03_4" checked="checked">
+                                        <label for="chk05-1">동의하지않음</label></li>
+                                    <li class="chk"><input type="radio" id="chk05-2" name="check03_4"> <label for="chk05-2">동의함</label></li>
+                                </ul>
+                            </li>
+                            <li class="agreeBody">
+                                <div>- 고유식별정보를 제공 동의여부</div>
+                                <ul class="inpRadio">
+                                    <li class="un_chk"><input type="radio" id="chk06-1" name="check03_5" checked="checked">
+                                        <label for="chk06-1">동의하지않음</label></li>
+                                    <li class="chk"><input type="radio" id="chk06-2" name="check03_5">
+                                        <label for="chk06-2">동의함</label></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
+                    <h3 class="subtitle">How To</h3>
+                    <div class="howto">
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWQdXjP" data-user="heiseychoi" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/heiseychoi/pen/QWQdXjP">
+                            실무_약관전체동의2</a> by Heisey (<a href="https://codepen.io/heiseychoi">@heiseychoi</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                          </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
